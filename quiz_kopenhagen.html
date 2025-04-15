@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Kopenhagen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-xl mx-auto mt-12 bg-white p-8 rounded shadow">
+        <h1 class="text-2xl font-bold text-center text-blue-700 mb-6">Participe do nosso Quiz!</h1>
+
+        <form action="https://SEU-LINK-AQUI.com" method="GET">
+            <!-- Nome -->
+            <div class="mb-6">
+                <label class="block text-gray-700 font-semibold mb-2" for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" required class="w-full border border-gray-300 rounded px-4 py-2">
+            </div>
+
+            <!-- Pergunta 1 -->
+            <div class="mb-6">
+                <p class="font-semibold text-gray-800 mb-2">Com que frequência você compra chocolates?</p>
+                <label class="block mb-1"><input type="radio" name="frequencia" value="ate3" class="mr-2">Até 3 vezes na semana</label>
+                <label class="block mb-1"><input type="radio" name="frequencia" value="ate5" class="mr-2">Até 5 vezes na semana</label>
+                <label class="block mb-1"><input type="radio" name="frequencia" value="ate2dias" class="mr-2">Até 2 dias na semana</label>
+                <label class="block mb-1"><input type="radio" name="frequencia" value="1oumenos" class="mr-2">1 dia ou menos</label>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="mb-6">
+                <p class="font-semibold text-gray-800 mb-2">Qual nota você daria para a última propaganda que viu da Kopenhagen?</p>
+                <label class="block mb-1"><input type="radio" name="avaliacao" value="excelente" class="mr-2">Excelente</label>
+                <label class="block mb-1"><input type="radio" name="avaliacao" value="bom" class="mr-2">Bom</label>
+                <label class="block mb-1"><input type="radio" name="avaliacao" value="regular" class="mr-2">Regular</label>
+                <label class="block mb-1"><input type="radio" name="avaliacao" value="ruim" class="mr-2">Ruim</label>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="mb-6">
+                <p class="font-semibold text-gray-800 mb-2">Qual a probabilidade de você presentear alguém com um chocolate Kopenhagen?</p>
+                <label class="block mb-1"><input type="radio" name="probabilidade" value="alta" class="mr-2">Alta</label>
+                <label class="block mb-1"><input type="radio" name="probabilidade" value="media" class="mr-2">Média</label>
+                <label class="block mb-1"><input type="radio" name="probabilidade" value="baixa" class="mr-2">Baixa</label>
+                <label class="block mb-1"><input type="radio" name="probabilidade" value="naopresentearia" class="mr-2">Não presentearia</label>
+            </div>
+
+            <!-- Botão -->
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
